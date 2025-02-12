@@ -5,8 +5,10 @@
 
 #include <stdio.h>
 
-/*
- * main - Prints some text using puts to automaticly add new line and returns 0
+/**
+ * main - Prints some text using puts to automaticly add new line
+ *
+ * Return: 0 always
  */
 
 int main(void)
