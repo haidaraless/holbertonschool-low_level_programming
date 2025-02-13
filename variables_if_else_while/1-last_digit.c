@@ -7,7 +7,7 @@
  */
 
 /**
- * main - Examin a random number and prints a message accoring to condition
+ * main - Examine a random number and prints a message accoring to condition
  * Return: 0
  */
 int main(void)
@@ -30,5 +30,6 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0", n, last);
 	}
+
 	return (0);
 }
