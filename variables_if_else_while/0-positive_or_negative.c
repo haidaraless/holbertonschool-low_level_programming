@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 
 /**
  * main - Determine if the randow number is positive of negative
