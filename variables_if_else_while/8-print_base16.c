@@ -6,7 +6,7 @@
  */
 
 /**
- * main - prints hexdecemal numbers in lower case. 
+ * main - prints hexdecemal numbers in lower case.
  * Return: 0
  */
 
