@@ -6,11 +6,11 @@
  */
 
 /**
- * main - prints alphabets in lowercase
+ * print_alphabet - prints alphabets in lowercase
  * Return: 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char letter;
 
@@ -20,6 +20,4 @@ int main(void)
 	}
 
 	_putchar('\n');
-
-	return (0);
 }
