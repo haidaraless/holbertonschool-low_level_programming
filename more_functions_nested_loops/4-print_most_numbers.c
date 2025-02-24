@@ -6,7 +6,7 @@
  */
 
 /**
- * print_most_numbers - prints natural numbers without (2, 4) followed by new line
+ * print_most_numbers - prints numbers without (2, 4) followed by new line
  */
 
 void print_most_numbers(void)
