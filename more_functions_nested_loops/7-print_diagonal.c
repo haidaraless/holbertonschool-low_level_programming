@@ -7,7 +7,7 @@
 
 /**
  * print_diagonal - prints a diagonal line with given length
- * @n: number of times that prints \
+ * @n: number of times that prints diagonal
  */
 
 void print_diagonal(int n)
@@ -16,9 +16,9 @@ void print_diagonal(int n)
 	{
 		int length, space;
 
-		for (length = 0; length < n; length++)
+		for (length = 0; length < n - 1; length++)
 		{
-			for (space = 0; space < length - 1; space++)
+			for (space = 0; space < length; space++)
 			{
 				_putchar(' ');
 			}
