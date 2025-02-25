@@ -18,7 +18,7 @@ void print_triangle(int size)
 
 		for (hash = 1; hash <= size; hash++)
 		{
-			for (index = size - hash; index < size; index--)
+			for (index = size - hash; index > 0; index--)
 				_putchar(' ');
 
 			for (index = 0; index < hash; index++)
