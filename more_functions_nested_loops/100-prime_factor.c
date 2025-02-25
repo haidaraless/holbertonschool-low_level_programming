@@ -16,7 +16,22 @@ int main(void)
 	long prime = 612852475143;
 	long division;
 
-	printf("\n");
+	while (division < (prime / 2))
+	{
+		if ((prime % 2) == 0)
+		{
+			prime /= 2;
+			continue;
+		}
+
+		for (division = 3; division < (prime / 2); division += 2)
+		{
+			if ((prime % division) == 0)
+				prime /= division;
+		}
+	}
+
+	printf("%ld\n", prime);
 
 	return (0);
 }
