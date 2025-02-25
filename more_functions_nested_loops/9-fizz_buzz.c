@@ -10,6 +10,7 @@
  * for numbers multiples of 3, prints Fizz
  * for numbers multiples of 5, prints Buzz
  * for numbers multiples of both 3 & 5, prints FizzBuzz
+ * otherwise print the given number
  * Return: 0
  */
 
@@ -30,6 +31,10 @@ int main(void)
 		else if (n % 5)
 		{
 			printf("Buzz");
+		}
+		else
+		{
+			printf("%d", n);
 		}
 	}
 
