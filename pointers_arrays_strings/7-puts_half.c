@@ -24,7 +24,7 @@ void puts_half(char *str)
 		count++;
 	}
 
-	if (count % 2 == 0)
+	if (count % 2 == 1)
 		index = count / 2;
 	else
 		index = (count - 1) / 2;
