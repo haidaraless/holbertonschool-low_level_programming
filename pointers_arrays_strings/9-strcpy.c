@@ -8,6 +8,10 @@
 
 /**
  * main - checks the code
+ * @s1: a variable to hold string
+ * @ptr: a pointer to destination
+ * Return 0 Always
+ *
  * _strcpy - copies string from source to destination
  * @dest: represents destination to copied string
  * @src: represents source from string to be copied
