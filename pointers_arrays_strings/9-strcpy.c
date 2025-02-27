@@ -6,7 +6,7 @@
  */
 
 /**
- * *_strcpy - copies string from source to destination
+ * _strcpy - copies string from source to destination
  * @dest: represents destination to copied string
  * @src: represents source from string to be copied
  * Return: a pointer to destination
