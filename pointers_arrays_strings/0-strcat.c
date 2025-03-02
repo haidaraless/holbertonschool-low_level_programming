@@ -1,10 +1,5 @@
 #include "main.h"
 
-/*
- * File - 0-strcat.c
- * Created by: Haidar Alessa 10682@holbertonstudents.com
- */
-
 /**
  * _strcat - concatenates two strings,
  * @dest: a pointer to destination of concatenated string
