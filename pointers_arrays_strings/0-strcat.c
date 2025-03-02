@@ -14,20 +14,15 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int count = 0, count2 = 0;
+	char *ptr = dest;
 
-	while (*(dest + count) != '\0')
-	{
-		count++;
-	}
+	while (*ptr)
+		ptr++;
 
-	while (count2 >= 0)
-	{
-		*(dest + count) = *(src + count2);
-		if (*(src + count2) == '\0')
-			break;
-		count++;
-		count2++;
-	}
+	while (*src)
+		*ptr++ = *src++;
+
+	*ptr = '\0';
+
 	return (dest);
 }
