@@ -8,8 +8,6 @@
 
 /**
  * main - checks the code
- * @s1 a variable to hold string
- * @ptr a pointer to destination
  * Return: 0 Always
  */
 
