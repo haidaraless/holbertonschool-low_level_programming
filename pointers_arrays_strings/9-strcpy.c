@@ -1,10 +1,5 @@
 #include "main.h"
 
-/*
- * File - 9-strcpy.c
- * Created by: Haidar Alessa 10682@holbertonstudents.com
- */
-
 /**
  * _strcpy - copies string from source to destination
  * @dest: destination to copied string
