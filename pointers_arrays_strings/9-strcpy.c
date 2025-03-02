@@ -6,7 +6,7 @@
  */
 
 /**
- * *_strcpy - copies string from source to destination
+ * _strcpy - copies string from source to destination
  * @dest: destination to copied string
  * @src: source of string to be copied
  * Return: a pointer to destination
@@ -14,15 +14,13 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int count = 0;
+	int i;
 
-	while (count >= 0)
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		*(dest + count) = *(src + count);
-		if (*(src + count) == '\0')
-			break;
-		count++;
+		dest[i] = src[i];
 	}
+	dest[i] = '\0';
 
 	return (dest);
 }
