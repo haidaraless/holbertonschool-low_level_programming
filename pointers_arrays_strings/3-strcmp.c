@@ -2,9 +2,9 @@
 
 /**
  * _strcmp - compares two strings
- * @dest: a pointer to destination
- * @src: a point to source of string
- * Return: 0 
+ * @s1: first string to be compared
+ * @s2: second string to be compared
+ * Return: differance between two strings
  */
 
 int _strcmp(char *s1, char *s2)
