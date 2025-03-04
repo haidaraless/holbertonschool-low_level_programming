@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * rev_array - reverse the elements of array
+ * reverse_array - reverse the elements of array
  * @a: the array to be reverse its elements
  * @n: represent number of elements in the array
  */
 
-void rev_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int *temp[n];
 	int i;
