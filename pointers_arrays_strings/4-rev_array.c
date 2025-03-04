@@ -1,17 +1,24 @@
 #include "main.h"
 
 /**
- * reverse_array - reverse the elements of array
- * @a: the array to be reverse its elements
+ * reverse_array - reverse the elements of an array
+ * @a: the array to be reversed
  * @n: represent number of elements in the array
  */
 
 void reverse_array(int *a, int n)
 {
-	int temp[n], i;
+	int temp;
+	int start = 0;
+	int end = n - 1;
 
-	for (i = n; i < n; i++)
+	while (start < end)
 	{
-		temp[i] = a[n - 1 - i];
+		temp = a[start];
+		a[start] = a[end];
+		a[end] = temp;
+
+		start++;
+		end--;
 	}
 }
