@@ -31,10 +31,10 @@ char *str_concat(char *s1, char *s2)
 	int i, j, s1_length, s2_length;
 
 	if (s1 != NULL)
-		str_length(s1);
+		s1_length = str_length(s1);
 
 	if (s2 == NULL)
-		str_length(s2);
+		s2_length = str_length(s2);
 
 	ptr = malloc(sizeof(char) * (s1_length + s2_length + 1));
 
