@@ -22,14 +22,15 @@ int str_length(char *str)
  * @s1: first string to be concatenated
  * @s2: second string to be concatenated
  *
- * Return: a pointer of the concatenated string 
+ * Return: a pointer of the concatenated string
  */
 
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int s1_length = 0;
-	int s2_length = 0;
+	int i, j;
+	int s1_length = str_length(s1);
+	int s2_length = str_length(s2);
 
 	if (s1 == NULL)
 		s1 = "";
@@ -37,13 +38,18 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	ptr = malloc(sizeof(char) * s1_length + sizeof(char) * s2_length);
+	ptr = malloc(sizeof(char) * (s1_length + s2_length + 1));
 
 	if (ptr == NULL)
 		return (NULL);
 
 	/* Concatencation logic here  */
-	while
+	for (i = 0; i < s1_length; i++)
+		ptr[i] = s1[i];
 
+	for (j = 0; j < s2_length; j++)
+		ptr[i + j] = s2[j];
+
+	ptr[i + j] = '\0';
 	return (ptr);
 }
