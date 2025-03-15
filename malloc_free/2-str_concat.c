@@ -28,15 +28,13 @@ int str_length(char *str)
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int i, j;
-	int s1_length = str_length(s1);
-	int s2_length = str_length(s2);
+	int i, j, s1_length, s2_length;
 
-	if (s1 == NULL)
-		s1 = "";
+	if (s1 != NULL)
+		str_length(s1);
 
 	if (s2 == NULL)
-		s2 = "";
+		str_length(s2);
 
 	ptr = malloc(sizeof(char) * (s1_length + s2_length + 1));
 
