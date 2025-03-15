@@ -9,7 +9,7 @@
 
 int str_length(char *str)
 {
-	unsigned int length = 0;
+	int length = 0;
 
 	while (str[length] != '\0')
 		length++;
@@ -30,11 +30,14 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 	int i, j, s1_length, s2_length;
 
-	if (s1 != NULL)
-		s1_length = str_length(s1);
+	if (s1 == NULL)
+		s1 = "";
 
 	if (s2 == NULL)
-		s2_length = str_length(s2);
+		s2 = "";
+
+	s1_length = str_length(s1);
+	s2_length = str_length(s2);
 
 	ptr = malloc(sizeof(char) * (s1_length + s2_length + 1));
 
