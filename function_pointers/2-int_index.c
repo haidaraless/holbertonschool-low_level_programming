@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 
 /**
  * int_index - returns the first element's index for which
@@ -12,6 +13,12 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
+
+	if (array == NULL)
+		return;
+
+	if (cpm == NULL)
+		return;
 
 	if (size <= 0)
 		return (-1);
