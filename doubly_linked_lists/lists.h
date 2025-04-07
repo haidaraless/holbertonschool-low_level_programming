@@ -1,0 +1,31 @@
+#ifndef LISTS_H
+#define LISTS_H
+
+#include <stddef.h>
+
+/*
+ * File: lists.h
+ * Created by: Haidar Alessa 10682@holbertonstudents.com
+ * Desc: A Header file contains all prototype functions
+ */
+
+
+/**
+ * struct dlistint_s - doubly linked list
+ * @n: int data
+ * @prev: points to the previous node
+ * @next: points to the next node
+ *
+ * Description: doubly linked list node structure
+ */
+typedef struct dlistint_s
+{
+	int n;
+	struct dlistint_s *prev;
+	struct dlistint_s *next;
+} dlistint_t;
+
+/* Function Prototypes */
+size_t print_dlistint(const dlistint_t *h);
+
+#endif /* LISTS_H */
