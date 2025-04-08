@@ -1,17 +1,13 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
 * print_binary - prints the binary representation of a number.
 * @n: the number to be converted and printed in binary.
 */
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask;
+	unsigned long int mask = 1UL << (sizeof(n) * 8 - 1);
 	int started = 0;
-
-	mask = 1;
-	while (mask <= n)
-		mask <<= 1;
 
 	if (n == 0)
 	{
